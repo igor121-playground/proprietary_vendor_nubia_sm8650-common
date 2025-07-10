@@ -1652,15 +1652,11 @@ PRODUCT_PACKAGES += \
     ims_rtp_daemon \
     imsdaemon \
     init.class_main \
-    init.kernel.post_boot-pineapple \
-    init.kernel.post_boot \
     init.mdm \
     init.qcom.class_core \
     init.qcom.early_boot \
-    init.qcom.post_boot \
     init.qcom.sensors \
     init.qcom \
-    init.qti.kernel \
     init.qti.media \
     init.qti.qcv \
     init.qti.write \
