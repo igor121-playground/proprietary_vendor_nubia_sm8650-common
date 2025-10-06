@@ -7113,6 +7113,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcne.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libdiag",
@@ -11634,6 +11635,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqcc_sdk.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -13409,6 +13411,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqms_client.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "liblog",
                 "libbinder",
                 "libutils",
@@ -18553,6 +18556,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.libdpmframework.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libhidlbase_shim",
                 "libdiag",
                 "libbinder",
@@ -24193,6 +24197,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdservice.so",
             ],
             shared_libs: [
+                "libaudioclient_shim",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -27165,22 +27170,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-pineapple",
-    owner: "nubia",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-pineapple.sh",
-    filename: "init.kernel.post_boot-pineapple.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot",
-    owner: "nubia",
-    src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
-    filename: "init.kernel.post_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.mdm",
     owner: "nubia",
     src: "proprietary/vendor/bin/init.mdm.sh",
@@ -27205,14 +27194,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.post_boot",
-    owner: "nubia",
-    src: "proprietary/vendor/bin/init.qcom.post_boot.sh",
-    filename: "init.qcom.post_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qcom.sensors",
     owner: "nubia",
     src: "proprietary/vendor/bin/init.qcom.sensors.sh",
@@ -27225,14 +27206,6 @@ sh_binary {
     owner: "nubia",
     src: "proprietary/vendor/bin/init.qcom.sh",
     filename: "init.qcom.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel",
-    owner: "nubia",
-    src: "proprietary/vendor/bin/init.qti.kernel.sh",
-    filename: "init.qti.kernel.sh",
     soc_specific: true,
 }
 
@@ -27654,6 +27627,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qcc-vendor",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -27848,6 +27822,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qms",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libavservices_minijail",
                 "libcutils",
                 "liblog",
@@ -28856,6 +28831,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/xtra-daemon",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libutils",
                 "libcutils",
                 "libcrypto",
