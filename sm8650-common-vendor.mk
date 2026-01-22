@@ -642,6 +642,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/sm8650-common/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    liblhdc \
+    liblhdcBT_enc \
+    liblhdcv5 \
+    liblhdcv5BT_enc \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eisv2 \
@@ -982,8 +986,6 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libprotobuf-cpp-full-21.7 \
-    libprotobuf-cpp-lite-21.7 \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1111,7 +1113,7 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
     libtaautoload \
-    libtensorflowlite_c \
+    libtensorflowlite_c_vendor \
     libtensorflowlite_gpu_jni \
     libtensorflowlite_jni_vendor \
     libtestutils \
@@ -1122,6 +1124,7 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
+    libtinyxml2_stock \
     libtlpd \
     libtlpd_configmgr \
     libtlpd_crypto \
